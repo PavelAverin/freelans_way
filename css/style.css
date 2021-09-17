@@ -1,0 +1,598 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Museo Cyrl 900';
+  src: url('../fonts/MuseoCyrl-900.woff2') format('woff2'),
+      url('../fonts/MuseoCyrl-900.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+}
+img {
+  max-width: 100%;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 22px 0;
+  background-color: #f1f1f1;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-link {
+  color: #202020;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 11px;
+  margin-left: 11px;
+}
+.login {
+  color: #202020;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+/* Главная секция */
+.hero {
+  padding-top: 62px;
+  padding-bottom: 71px;
+  margin-top: 60px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+.image-block {
+  position: relative;
+  margin-right: 122px;
+}
+.sale-label {
+  position: absolute;
+  right: 0;
+  top: 23px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #c93535;
+  padding: 12px 17px;
+}
+.author {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+.title {
+  font-family: 'Museo Cyrl 900';
+  font-size: 54px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.subtittle {
+  display: block;
+  max-width: 360px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 48px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
+}
+.info-text {
+  flex-basis: 45%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.pricetag {
+  font-weight: 400;
+  font-size: 55px;
+  margin-right: 64px;
+}
+.favorites {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+.favorites-icon {
+  margin-right: 10px;
+}
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 22px 50px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.button-primary {
+  background-color: #f89c02;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.button-outline {
+  border: 2px solid #f89c02;
+  color: #f89c02;
+  text-decoration: none;
+}
+
+/* О книге */
+.about {
+  background-color: #f1f1f1;
+  padding: 99px 0;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.about-book {
+  max-width: 454px;
+  flex-shrink: 0;
+}
+.about-author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 552px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  background-color: #fff;
+  padding: 68px 53px;
+}
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 21px;
+}
+.author-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.author-link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+.about-text {
+  margin-top: 24px;
+  flex-basis: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Читатели */
+.readers-container {
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 87px;
+  padding-bottom: 108px;
+}
+.readers-board {
+display: flex;
+flex-wrap: wrap;
+row-gap: 28px;
+margin-top: 56px;
+}
+.readers-avatar {
+  width: 166px;
+  height: 166px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 28px;
+}
+.readers-avatar:nth-child(6n+6) {
+  margin-right: 0;
+}
+
+/* Подвал */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 93px;
+  background-color: #f1f1f1;
+}
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-list {
+  padding: 0;
+  list-style: none;
+}
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.list-item {
+  margin-bottom: 16px;
+}
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
+.requisites {
+  margin-right: 167px;
+}
+.information {
+  margin-right: 158px;
+}
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  padding: 18px;
+}
+@media (max-width: 1200px) {
+  .header-container, 
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 960px;
+  }
+  .readers-container {
+    padding-bottom: 94px;
+  }
+  .image-block {
+    min-width: 390px;
+    max-width: 390px;
+    margin-right: 30px;
+  }
+  .about-book {
+    max-width: 367px;
+  }
+  
+  .readers-board {
+    row-gap: 23px;
+  }
+  .readers-avatar {
+    width: 139px;
+    height: 139px;
+    margin-right: 23px;
+  }
+}
+@media (max-width: 992px) {
+  .header-container, 
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 760px;
+  }
+  .nav {
+    display: none;
+  }
+  .image-block {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .author {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .subtittle {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .info {
+    margin-bottom: 39px;
+  }
+  .info-text {
+    font-size: 16px;
+  }
+  .age, .format {
+    flex-grow: 1;
+  }
+  .price {
+    margin-bottom: 39px;
+  }
+  .button {
+    padding: 20px 40px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-book {
+    max-width: 100%;
+    margin-bottom: 62px;
+  }
+  .about-author {
+    min-width: 100%;
+  }
+  .readers-container {
+    padding-bottom: 80px;
+  }
+  .readers-board {
+    row-gap: 29px;
+  }
+  .readers-avatar:nth-child(n+9) {
+    display: none;
+  }
+  .readers-avatar {
+    width: 166px;
+    height: 166px;
+    margin-right: 29px;
+  }
+  .readers-avatar:nth-child(4n+4) {
+    margin-right: 0;
+  }
+  .readers-avatar:nth-child(6) {
+    margin-right: 29px;
+  }
+  .requisites, .information {
+    margin-right: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container, 
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 560px;
+  }
+  .hero {
+    padding-top: 40px;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+  }
+  .image-block {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  .hero-image {
+    min-width: 100%;
+  }
+  .readers-container {
+    padding-top: 80px;
+    padding-bottom: 84px;
+  }
+  .readers-board {
+    row-gap: 29px;
+  }
+  .readers-avatar:nth-child(n+7) {
+    display: none;
+  }
+  .readers-avatar {
+    width: 166px;
+    height: 166px;
+    margin-right: 29px;
+  }
+  .readers-avatar:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .readers-avatar:nth-child(4) {
+    margin-right: 29px;
+  }
+  .requisites {
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+  .information {
+    margin-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .header-container, 
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 95%;
+  } 
+  .author {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 19px;
+  }
+  .subtittle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+  }
+  .info-text {
+    flex-basis: 100%;
+    margin-bottom: 19px;
+  }
+  .pricetag {
+    margin-right: 28px;
+  }
+  .favorites-icon {
+    margin-right: 0;
+  }
+  .favorites-text {
+    display: none;
+  }
+  .button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .button-primary {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about-book {
+    margin-bottom: 70px;
+  }
+  .about-author {
+    padding: 54px 44px;
+  }
+  .author-text {
+    font-size: 14px;
+  }
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .readers-container {
+    padding-top: 55px;
+    padding-bottom: 68px;
+  }
+  .readers-board {
+    row-gap: 22px;
+  }
+  .readers-avatar:nth-child(n+5) {
+    display: none;
+  }
+  .readers-avatar {
+    width: 150px;
+    height: 150px;
+    margin-right: 10%;
+  }
+  .readers-avatar:nth-child(2n+2) {
+    margin-right: 0;
+  }
+  .readers-avatar:nth-child(3) {
+    margin-right: 10%;
+  }
+  .requisites, .information, .contacts {
+    flex-basis: 100%;
+    margin-bottom: 36px;
+    margin-right: 0;
+  }
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .footer-link {
+    font-size: 16px;
+  }
+  .section-title {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .header-container, 
+  .hero-container,
+  .about-container,
+  .readers-container,
+  .footer-container {
+    max-width: 85%;
+  } 
+  .author {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .subtittle {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .image-block {
+    margin-bottom: 42px;
+  }
+  .hero {
+    padding-bottom: 63px;
+  }
+  .about {
+    padding-top: 61px;
+    padding-bottom: 54px;
+  }
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .about-author {
+    padding: 30px 15px;
+  }
+  .author-avatar {
+    margin-right: 10px;
+    margin-bottom: 16px;
+  }
+  .author-name {
+    font-size: 12px;
+  }
+  .author-link {
+    font-size: 12px;
+  }
+  .readers-container {
+    padding: 60px 0;
+  }
+  .readers-board {
+    row-gap: 14px;
+  }
+  .readers-avatar:nth-child(n+5) {
+    display: none;
+  }
+  .readers-avatar {
+    width: 125px;
+    height: 125px;
+    margin-right: 8%;
+  }
+  .readers-avatar:nth-child(2n+2) {
+    margin-right: 0;
+  }
+  .readers-avatar:nth-child(3) {
+    margin-right: 8%;
+}
